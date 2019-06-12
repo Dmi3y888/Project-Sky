@@ -1,0 +1,2 @@
+def    Good():
+    print( 'Good' )

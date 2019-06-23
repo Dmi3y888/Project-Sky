@@ -13,3 +13,5 @@ else:
         print("Ответ", b)
     else:
         print("Ответ", c)
+
+

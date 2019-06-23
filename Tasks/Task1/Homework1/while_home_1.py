@@ -1,10 +1,9 @@
-i = 1
-while i < 12:
-    if i == 3:
-        i += 1
+print("Введите количество членов")
+a = int(input())
+b = 1
+c = b + 1
 
-    print(i)
-    if i == 5:
-        break
+while d <= a:
+    n = b + c
 
-    i += 1
+print("Сумма первых", n)

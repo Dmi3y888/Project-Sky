@@ -1,9 +1,8 @@
 print("Введите количество членов")
 a = int(input())
 b = 1
-c = b + 1
+c = (b/(b + 1))
+while c <= a:
+    c = b + c
 
-while d <= a:
-    n = b + c
-
-print("Сумма первых", n)
+print("Сумма первых", c)

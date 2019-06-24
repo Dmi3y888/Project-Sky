@@ -1,9 +1,14 @@
-a = 1
-b = 0.1
-c = 1
-while a + b <= 9.9:
-    c = c * (a + b)
-    print(c)
+print("Введите количество членов")
+a = float(input())
+print("а =", a)
+n = int(input())
+print("n =", n)
+i = 0
+c = a
+while i < n:
+    i = i + 1
+    c = c * (a - i * n)
 
-    a = a + 1
-    b = b + 0.1  #a(a-n)(a-2n)…(a-n*n)
+print("Результат", c)
+
+# a(a-n)(a-2n)  …(a-n*n)

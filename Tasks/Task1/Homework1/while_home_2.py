@@ -1,8 +1,6 @@
 print("Введите количество членов")
-a = float(input())
-print("а =", a)
-n = int(input())
-print("n =", n)
+a = float(input("Введи а - "))
+n = int(input("Введи n - "))
 i = 0
 c = a
 while i < n:

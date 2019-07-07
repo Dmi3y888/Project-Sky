@@ -5,6 +5,13 @@ arr = [
 ]
 x = 3
 index = 0
-    while index < len(arr):
-        if
-    print (arr)
+while index < len(arr):
+    print(arr[index])
+
+    index_e = 0
+
+    while index_e < len(arr[index]):
+        print(arr[index][index_e])
+        index_e += 1
+
+    index += 1

@@ -17,11 +17,8 @@ while True:
         if sum <= 0:
             print('Error, sum is not correct')
             continue
-        if name in bank:
-            bank[name] += sum
-        else:
-            bank[name] = sum
-        print("Yohoo your balance is", bank[name])
+        bank[name] = bank.get(name, 0) + sum
+        print("Youhoo, your balance is", bank[name])
 
     elif comand == 'Balance':
         name = input('Enter name: \n')
@@ -36,11 +33,7 @@ while True:
         if sum <= 0:
             print('Error, sum is not correct')
         else:
-            if name in bank:
-                bank[name] -= sum
-            else:
-                bank[name] = sum * -1
-
+            bank[name] = bank.get(name, 0) - sum
     elif comand == 'Transfer':
         name = input('Enter name: \n')
         name1 = input('Enter name to transfer: \n')
@@ -48,19 +41,9 @@ while True:
         if sum <= 0:
             print('Error, sum is not correct')
             continue
-        if name in bank:
-            bank[name] -= sum
-            if name1 in bank:
-                bank[name1] += sum
-            else:
-                bank[name1] = sum
-        else:
-            bank[name] = sum * -1
-            if name1 in bank:
-                bank[name1] += sum
-            else:
-                bank[name1] = sum
-        print('Balance', bank[name], 'Balance', bank[name1])
+        bank[name1] = bank.get(name1, 0) + sum
+        bank[name] = bank.get(name, 0) - sum
+        print('Balance', name , bank[name], 'Balance', name1, bank[name1])
 
     elif comand == 'Income':
         p = float(input('Enter % - \n'))

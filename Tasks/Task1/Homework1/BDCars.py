@@ -1,5 +1,5 @@
 DataBaseCars = {}
-commands = ['Read', 'Enter', 'Search', 'Enter number', 'Enter brand', 'Enter mark', 'Enter year', 'Enter money', 'Enter km', 'Enter name', 'Exit']
+commands = ['Read', 'Enter', 'Search', 'Exit']
 file_name = 'DataBaseCars.txt'
 
 while True:
@@ -38,9 +38,12 @@ while True:
                 if word.find(search) >= 0:
                     print(line)
                     break
-
-
         file.close()
+    elif comand == 'more_money':
+        year = input('Enter year \n')
+
+
+
 
 
 

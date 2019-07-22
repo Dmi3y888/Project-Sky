@@ -1,0 +1,4 @@
+Rixus	Egypt	Hurgada	100	5	4000
+Monte	Egypt	Sharm	100	4	3000
+Great	Greece	Aphins	100	5	1000
+Triton	Greece	Ponti	100	3	2000

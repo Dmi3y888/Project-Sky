@@ -25,7 +25,7 @@ class Person:
         return datetime.now().year - datetime.strptime(self.birth_date, '%d-%m-%Y').year
 
 
-if __name__ == '_main__':
+if __name__ == '__main__':
     saha = Person('Poraiko Oleksandr Viorelovuch', '28-06-1993')
     saha.save_human()
     petka = Person('Poroshenko Petro Batkovuch', '13-02-1775')

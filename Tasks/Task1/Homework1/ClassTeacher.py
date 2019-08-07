@@ -21,3 +21,8 @@ class Teacher(Person):
                                                                                                        self.pay,
                                                                                                        self.kur)
 
+        @classmethod
+        def get_student_by_group(cls, group):
+            return list(filter(lambda student: student.group == group, cls._instances))
+
+

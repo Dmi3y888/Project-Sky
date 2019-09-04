@@ -1,6 +1,6 @@
-Poraiko Oleksandr Viorelovuch	28-06-1993	%d-%m-%Y
-Poroshenko Petro Batkovuch	13-02-1775	%d-%m-%Y
-Ivanova Dasha Ivanovna	20.02.1992	%d.%m.%Y
+Poraiko Oleksandr Viorelovuch	28-06-1993
+Poroshenko Petro Batkovuch	13-02-1975
+Ivanova Dasha Ivanovna	20.02.1992
 Poraiko Oleksandr Viorelovuch	28-06-1993
 Poroshenko Petro Batkovuch	13-02-1775
 Ivanova Dasha Ivanovna	20.02.1992
@@ -8,7 +8,7 @@ Poraiko Oleksandr Viorelovuch	28-06-1993
 Poroshenko Petro Batkovuch	13-02-1775
 Ivanova Dasha Ivanovna	1-01-1992
 Poraiko Oleksandr Viorelovuch	28-06-1993
-Poroshenko Petro Batkovuch	13-02-1775
+Poroshenko Petro Batkovuch	13-02-1975
 Ivanova Dasha Ivanovna	1-01-1992
 Poraiko Oleksandr Viorelovuch	28-06-1993
 Poroshenko Petro Batkovuch	13-02-1775

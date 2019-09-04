@@ -21,7 +21,10 @@ class Person:
         return datetime.now().year - datetime.strptime(self.birth_date, '%d-%m-%Y').year
 
     def update(self):
-        sql_update = '''UPDATE person SET birth_date = "{birth_date}" WHERE id = "{id}" '''
+        sql_update = '''
+        UPDATE person 
+        SET birth_date = "{birth_date}", full_name = "{full_name}"
+        WHERE id = "{id}" '''
 
         cursor.execute(sql_update.format(**self.dict))
         conn.commit()
@@ -32,6 +35,8 @@ class Person:
 
         cursor.execute(sql_insert.format(**self.dict))
         conn.commit()
+        pk = cursor.lastrowid
+        self.id = pk
 
     @property
     def dict(self):
@@ -56,6 +61,8 @@ if __name__ == '__main__':
     saha.insert()
     petka.insert()
     dashka.insert()
+    dashka.full_name = 'Mashka'
+    dashka.update()
     conn.close()
 
 # SELECT * FROM person WHERE full_name like "%po%"
